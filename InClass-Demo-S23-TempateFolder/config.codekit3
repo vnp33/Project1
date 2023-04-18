@@ -538,6 +538,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/content\/footer.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/footer.html",
+      "oF" : 0
+    },
     "\/dev\/content\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -554,6 +562,14 @@
       "oAP" : "\/dev\/content\/hero2.html",
       "oF" : 0
     },
+    "\/dev\/content\/line up.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/line up.html",
+      "oF" : 0
+    },
     "\/dev\/content\/line up.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -568,14 +584,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/dev\/content\/mini heros.html",
-      "oF" : 0
-    },
-    "\/dev\/global\/footer.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/global\/footer.html",
       "oF" : 0
     },
     "\/dev\/global\/head.kit" : {
