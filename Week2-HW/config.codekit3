@@ -81,51 +81,25 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/Assets\/Location Icon.svg" : {
+    "\/Assets\/LocationIcon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/Assets\/Location Icon.svg",
+      "oAP" : "\/Assets\/LocationIcon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/Assets\/Phone Number Icon.svg" : {
+    "\/Assets\/PhoneNumber Icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/Assets\/Phone Number Icon.svg",
+      "oAP" : "\/Assets\/PhoneNumber Icon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
-    },
-    "\/Assets\/Rice Cooker9.jpg" : {
-      "ft" : 16384,
-      "iS" : 2299212,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/Assets\/Rice Cooker9.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/Assets\/Rice Cooker10.jpg" : {
-      "ft" : 16384,
-      "iS" : 587794,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/Assets\/Rice Cooker10.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
     },
     "\/Assets\/RiceCooker1.jpg" : {
       "ft" : 16384,
@@ -198,6 +172,32 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/Assets\/Ricecooker8.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/RiceCooker9.jpg" : {
+      "ft" : 16384,
+      "iS" : 2299212,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/RiceCooker9.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/RiceCooker10.jpg" : {
+      "ft" : 16384,
+      "iS" : 587794,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/RiceCooker10.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -554,6 +554,14 @@
       "oAP" : "\/dev\/content\/hero2.html",
       "oF" : 0
     },
+    "\/dev\/content\/line up.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/line up.html",
+      "oF" : 0
+    },
     "\/dev\/content\/line up.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -562,12 +570,12 @@
       "oAP" : "\/dev\/content\/line up.html",
       "oF" : 0
     },
-    "\/dev\/content\/mini heros.kit" : {
+    "\/dev\/content\/miniheros.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/content\/mini heros.html",
+      "oAP" : "\/dev\/content\/miniheros.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
