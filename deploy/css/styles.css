@@ -381,6 +381,7 @@ textarea {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
+  border: 1px solid red;
 }
 
 #hero > div {
