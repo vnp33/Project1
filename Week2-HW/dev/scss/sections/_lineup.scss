@@ -1,6 +1,13 @@
 /* =============
     Line Up
 ============= */
-#lineup{
-    
+#lineup-text{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas:
+     ". hero-text ."". lineup-text .";
+
+    >aside{
+        grid-area: lineup-text;
+    }
 }

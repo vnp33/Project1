@@ -394,15 +394,23 @@ textarea {
 /* =============
     Mini Heros
 ============= */
-.minihero-text {
+#minihero-text {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". minihero-text .";
 }
-.minihero-text > div {
+#minihero-text .minihero-text {
   grid-area: minihero-text;
 }
 
 /* =============
     Line Up
 ============= */
+#lineup-text {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero-text ." ". lineup-text .";
+}
+#lineup-text > aside {
+  grid-area: lineup-text;
+}
