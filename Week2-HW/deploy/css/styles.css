@@ -362,7 +362,13 @@ textarea {
     Header
 ============= */
 header {
-  background-color: navy;
+  background-color: rgb(41, 50, 65);
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+}
+header > div {
+  grid-area: header;
 }
 
 /* =============

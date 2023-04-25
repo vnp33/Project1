@@ -2,5 +2,12 @@
     Header
 ============= */
 header{
-    background-color: navy;
+    background-color: rgba(41, 50, 65, 1);
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header .";
+
+    >div{
+        grid-area: header;
+    }
 }
