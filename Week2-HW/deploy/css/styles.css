@@ -409,8 +409,8 @@ textarea {
 #lineup-text {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero-text ." ". lineup-text .";
+  grid-template-areas: ". lineup-text .";
 }
-#lineup-text > aside {
+#lineup-text .lineup-text {
   grid-area: lineup-text;
 }
