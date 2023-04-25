@@ -2,12 +2,11 @@
     Mini Heros
 ============= */
 
-#minihero-text{
+#minihero{
     display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". minihero-text .";
-
-   .minihero-text{
-        grid-area: minihero-text;
-    }
+    grid-template-areas: ". minihero .";
+}
+#minihero > div{
+    grid-area: minihero;
 }

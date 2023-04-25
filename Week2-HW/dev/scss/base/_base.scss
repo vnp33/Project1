@@ -1,7 +1,7 @@
 /* =============
     Base
 ============= */
-.header-footer{
+#header-footer{
     background-color:  rgba(41, 50, 65, 1);
     display: grid;
     grid-template-columns: 16px auto 16px;
@@ -10,9 +10,6 @@
     >div{
         grid-area: header-footer;
     }
-}
-#mini-image{
-    width: 100%;
 }
 
 .large-images{

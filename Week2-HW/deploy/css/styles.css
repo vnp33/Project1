@@ -327,18 +327,14 @@ template {
 /* =============
     Base
 ============= */
-.header-footer {
+#header-footer {
   background-color: rgb(41, 50, 65);
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header-footer .";
 }
-.header-footer > div {
+#header-footer > div {
   grid-area: header-footer;
-}
-
-#mini-image {
-  width: 100%;
 }
 
 .large-images {
@@ -381,36 +377,39 @@ textarea {
 /* =============
     Hero
 ============= */
-#hero-text {
+#hero {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero-text ." ". hero-text .";
+  grid-template-areas: ". hero .";
 }
-#hero-text > aside {
-  grid-area: hero-text;
+
+#hero > div {
+  grid-area: hero;
 }
 
 /* ---------- Hero 2 ---------- */
 /* =============
     Mini Heros
 ============= */
-#minihero-text {
+#minihero {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". minihero-text .";
+  grid-template-areas: ". minihero .";
 }
-#minihero-text .minihero-text {
-  grid-area: minihero-text;
+
+#minihero > div {
+  grid-area: minihero;
 }
 
 /* =============
     Line Up
 ============= */
-#lineup-text {
+#lineup {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". lineup-text .";
+  grid-template-areas: ". lineup .";
 }
-#lineup-text .lineup-text {
-  grid-area: lineup-text;
+
+#lineup > div {
+  grid-area: lineup;
 }
