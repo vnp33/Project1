@@ -374,6 +374,16 @@ header > div {
 /* =============
     Footer
 ============= */
+#footer {
+  background-color: rgb(41, 50, 65);
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+#footer > div {
+  grid-area: footer;
+}
+
 /* =============
     Hero
 ============= */
