@@ -1,6 +1,13 @@
 /* =============
     Mini Heros
 ============= */
-#miniheros{
-    
+
+.minihero-text{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". minihero-text .";
+
+    >div{
+        grid-area: minihero-text;
+    }
 }
