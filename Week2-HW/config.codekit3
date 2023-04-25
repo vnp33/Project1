@@ -355,32 +355,32 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/icons\/PhoneNumber Icon.svg" : {
+    "\/deploy\/img\/icons\/PhoneNumberIcon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/PhoneNumber Icon.svg",
+      "oAP" : "\/deploy\/img\/icons\/PhoneNumberIcon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/icons\/Search Icon.svg" : {
+    "\/deploy\/img\/icons\/SearchIcon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/Search Icon.svg",
+      "oAP" : "\/deploy\/img\/icons\/SearchIcon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/mini heros\/CloserLookCIRCLEimage.jpg" : {
+    "\/deploy\/img\/miniheros\/CloserLookCIRCLEimage.jpg" : {
       "ft" : 16384,
       "iS" : 11220,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/mini heros\/CloserLookCIRCLEimage.jpg",
+      "oAP" : "\/deploy\/img\/miniheros\/CloserLookCIRCLEimage.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -388,12 +388,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/mini heros\/FunctionsCIRCLEimage.jpg" : {
+    "\/deploy\/img\/miniheros\/FunctionsCIRCLEimage.jpg" : {
       "ft" : 16384,
       "iS" : 11490,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/mini heros\/FunctionsCIRCLEimage.jpg",
+      "oAP" : "\/deploy\/img\/miniheros\/FunctionsCIRCLEimage.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -401,12 +401,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/mini heros\/ricecooker5.jpg" : {
+    "\/deploy\/img\/miniheros\/ricecooker5.jpg" : {
       "ft" : 16384,
       "iS" : 138756,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/mini heros\/ricecooker5.jpg",
+      "oAP" : "\/deploy\/img\/miniheros\/ricecooker5.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -414,12 +414,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/mini heros\/ricecooker7.jpg" : {
+    "\/deploy\/img\/miniheros\/ricecooker7.jpg" : {
       "ft" : 16384,
       "iS" : 1783310,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/mini heros\/ricecooker7.jpg",
+      "oAP" : "\/deploy\/img\/miniheros\/ricecooker7.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -427,12 +427,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/mini heros\/Ricecooker8.jpg" : {
+    "\/deploy\/img\/miniheros\/Ricecooker8.jpg" : {
       "ft" : 16384,
       "iS" : 706397,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/mini heros\/Ricecooker8.jpg",
+      "oAP" : "\/deploy\/img\/miniheros\/Ricecooker8.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -440,12 +440,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/mini heros\/RiceCooker9.jpg" : {
+    "\/deploy\/img\/miniheros\/RiceCooker9.jpg" : {
       "ft" : 16384,
       "iS" : 2299212,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/mini heros\/RiceCooker9.jpg",
+      "oAP" : "\/deploy\/img\/miniheros\/RiceCooker9.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -453,12 +453,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/mini heros\/RiceCooker10.jpg" : {
+    "\/deploy\/img\/miniheros\/RiceCooker10.jpg" : {
       "ft" : 16384,
       "iS" : 587794,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/mini heros\/RiceCooker10.jpg",
+      "oAP" : "\/deploy\/img\/miniheros\/RiceCooker10.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -466,12 +466,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/mini heros\/RiceCooker11.jpg" : {
+    "\/deploy\/img\/miniheros\/RiceCooker11.jpg" : {
       "ft" : 16384,
       "iS" : 1480854,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/mini heros\/RiceCooker11.jpg",
+      "oAP" : "\/deploy\/img\/miniheros\/RiceCooker11.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
