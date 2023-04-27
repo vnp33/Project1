@@ -1,6 +1,39 @@
 /* =============
     Header
 ============= */
-#header-nav{
-    
+header{
+    #logo-nav{
+        background-color:  rgba(41, 50, 65, 1);
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". logo-nav .";
+       
+        >div{
+            grid-area: logo-nav;
+            img{
+
+            }
+        }
+    }
+    #search{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". search .";
+       
+        >div{
+            grid-area: search;
+            form{
+                input{
+
+                }
+
+            }
+            button{
+                img{
+                    
+                }
+            }
+        }
+    }
 }
+     

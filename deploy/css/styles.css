@@ -327,14 +327,10 @@ template {
 /* =============
     Base
 ============= */
-#header-footer {
-  background-color: rgb(41, 50, 65);
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header-footer .";
-}
-#header-footer > div {
-  grid-area: header-footer;
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .large-images {
@@ -371,9 +367,36 @@ textarea {
 /* =============
     Header
 ============= */
+header #logo-nav {
+  background-color: rgb(41, 50, 65);
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". logo-nav .";
+}
+header #logo-nav > div {
+  grid-area: logo-nav;
+}
+header #search {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+header #search > div {
+  grid-area: search;
+}
 /* =============
     Footer
 ============= */
+footer #footer {
+  background-color: rgb(41, 50, 65);
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+footer #footer > div {
+  grid-area: footer;
+}
+
 /* =============
     Hero
 ============= */
