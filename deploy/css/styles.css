@@ -402,14 +402,22 @@ footer > div {
 /* =============
     Hero
 ============= */
-#hero aside {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero .";
-  background-color: rgb(226, 109, 115);
+#hero {
+  padding-bottom: 12px;
 }
-#hero aside > div {
-  grid-area: hero;
+@media (min-width: 768px) {
+  #hero {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #hero aside {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". hero .";
+    background-color: rgb(226, 109, 115);
+  }
+  #hero aside > div {
+    grid-area: hero;
+  }
 }
 
 /* =============
@@ -419,9 +427,9 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". minihero .";
-  background: rgb(49, 89, 146);
 }
 #miniheros .minihero-content > div {
+  background: rgb(49, 89, 146);
   grid-area: minihero;
   display: grid;
   grid-template-columns: 50% auto;
@@ -430,15 +438,29 @@ footer > div {
 /* =============
     Line Up
 ============= */
-#lineup ul li img {
+#lineup ul {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #lineup ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+#lineup ul li {
+  border: 1px solid red;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+#lineup ul img {
   width: 100%;
 }
-#lineup ul li section {
+#lineup ul section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". lineup-content .";
 }
-#lineup ul li section > div {
+#lineup ul section > div {
   background: rgb(169, 195, 233);
   grid-area: lineup-content;
 }

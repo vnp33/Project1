@@ -2,15 +2,25 @@
     Hero
 ============= */
 #hero{
+    padding-bottom: 12px;
+
+    @include md{
+        grid-template-columns: repeat(2,1fr);
+  
+    
     aside{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". hero .";
         background-color: rgba(226, 109, 115, 1);
+        
+      
 
-            >div{
-                grid-area: hero;
-               
+        >div{
+            grid-area: hero;
+
+            
+            }
         }
     }
 }
