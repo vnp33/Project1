@@ -6,10 +6,11 @@
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". hero .";
+        background-color: rgba(226, 109, 115, 1);
 
             >div{
                 grid-area: hero;
-                background-color: rgba(226, 109, 115, 1);
+               
         }
     }
 }

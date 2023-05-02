@@ -406,10 +406,10 @@ footer #footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
+  background-color: rgb(226, 109, 115);
 }
 #hero aside > div {
   grid-area: hero;
-  background-color: rgb(226, 109, 115);
 }
 
 /* =============
