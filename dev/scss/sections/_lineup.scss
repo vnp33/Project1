@@ -2,38 +2,90 @@
     Line Up
 ============= */
 #lineup{
-    ul{
+
+    @include xxl{
         display: grid;
-        gap: 16px;
-
-        @include md{
-            grid-template-columns: repeat(2,1fr);
-          
-        }
-
-        li{
-            border: 1px solid red;
-
-            padding-top: 16px;
-            padding-bottom: 16px;
-            
-        }
-
-            img{
-                width: 100%;
-            }
-                section{ 
-                    display: grid;
-                    grid-template-columns: 16px auto 16px;
-                    grid-template-areas:". lineup-content .";
-                    
-
-                    >div{
-                        background:rgba(169, 195, 233, 1);
-                        grid-area: lineup-content;
-                    }
-                }
-
-        }            
+        grid-template-columns: auto 1440px auto;
+        grid-template-areas: ". line-up .";
     }
+
+    >div{
+        @include xxl {
+            grid-area: line-up;
+        }
+
+
+        ul{
+            display: grid;
+            gap: 16px;
+              
+            @include md {
+                grid-template-columns: repeat(4,1fr);
+                grid-template-areas: 
+                "l1 l1 l2 l2"
+                "l3 l3 l4 l4"
+                ".. l5 l5 ..";
+            }
+            @include lg{
+                grid-template-columns: repeat(6,1fr);
+                grid-template-areas: 
+                "l1 l1 l2 l2 l3 l3"
+                ". l4 l4 l5 l5 ."
+            }
+          
+    
+            li{
+          
+                img{
+                    width: 100%;
+                }
+                    section{ 
+                        display: grid;
+                        grid-template-columns: 16px auto 16px;
+                        grid-template-areas:". lineup-content .";
+    
+                        >div{
+                            background:rgba(169, 195, 233, 1);
+                            grid-area: lineup-content;
+                            }
+    
+                        }
+                    }
+            }  
+
+            #l1{
+                @include lg{
+                    grid-area: l1;
+                }
+            }
+
+            #l2{
+                @include lg{
+                    grid-area: l2;
+                }
+            }
+
+            #l3{
+                @include lg{
+                    grid-area: l3;
+                }
+            }
+
+            #l4{
+                @include lg{
+                    grid-area: l4;
+                }
+            }
+
+            #l5{
+                @include lg{
+                    grid-area: l5;
+                }
+            }
+
+
+    }
+   
+}
+
    

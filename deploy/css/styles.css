@@ -406,61 +406,105 @@ footer > div {
   padding-bottom: 12px;
 }
 @media (min-width: 768px) {
-  #hero {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  #hero aside {
+  #hero #hero-sub {
     display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". hero .";
-    background-color: rgb(226, 109, 115);
+    grid-template-columns: 50% auto;
   }
-  #hero aside > div {
-    grid-area: hero;
-  }
+}
+#hero #hero-sub aside {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero .";
+  background-color: rgb(226, 109, 115);
+}
+#hero #hero-sub aside > div {
+  grid-area: hero;
 }
 
 /* =============
     Mini Heros
 ============= */
-#miniheros .minihero-content {
+@media (min-width: 768px) {
+  #miniheros #minihero-content {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+#miniheros #minihero-content aside {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". minihero .";
+  grid-template-areas: ". hero .";
+  background-color: rgb(49, 89, 146);
 }
-#miniheros .minihero-content > div {
-  background: rgb(49, 89, 146);
-  grid-area: minihero;
-  display: grid;
-  grid-template-columns: 50% auto;
+#miniheros #minihero-content aside > div {
+  grid-area: minihero-content;
 }
 
 /* =============
     Line Up
 ============= */
-#lineup ul {
+@media (min-width: 1440px) {
+  #lineup {
+    display: grid;
+    grid-template-columns: auto 1440px auto;
+    grid-template-areas: ". line-up .";
+  }
+}
+@media (min-width: 1440px) {
+  #lineup > div {
+    grid-area: line-up;
+  }
+}
+#lineup > div ul {
   display: grid;
   gap: 16px;
 }
 @media (min-width: 768px) {
-  #lineup ul {
-    grid-template-columns: repeat(2, 1fr);
+  #lineup > div ul {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "l1 l1 l2 l2" "l3 l3 l4 l4" ".. l5 l5 ..";
   }
 }
-#lineup ul li {
-  border: 1px solid red;
-  padding-top: 16px;
-  padding-bottom: 16px;
+@media (min-width: 1024px) {
+  #lineup > div ul {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "l1 l1 l2 l2 l3 l3" ". l4 l4 l5 l5 .";
+  }
 }
-#lineup ul img {
+#lineup > div ul li img {
   width: 100%;
 }
-#lineup ul section {
+#lineup > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". lineup-content .";
 }
-#lineup ul section > div {
+#lineup > div ul li section > div {
   background: rgb(169, 195, 233);
   grid-area: lineup-content;
+}
+@media (min-width: 1024px) {
+  #lineup > div #l1 {
+    grid-area: l1;
+  }
+}
+@media (min-width: 1024px) {
+  #lineup > div #l2 {
+    grid-area: l2;
+  }
+}
+@media (min-width: 1024px) {
+  #lineup > div #l3 {
+    grid-area: l3;
+  }
+}
+@media (min-width: 1024px) {
+  #lineup > div #l4 {
+    grid-area: l4;
+  }
+}
+@media (min-width: 1024px) {
+  #lineup > div #l5 {
+    grid-area: l5;
+  }
 }
