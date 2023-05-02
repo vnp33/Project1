@@ -2,11 +2,22 @@
     Line Up
 ============= */
 #lineup{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas:". lineup .";
-}
+    ul{
+        li{
+            img{
+                width: 100%;
+            }
+                section{ 
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas:". lineup-content .";
 
-#lineup > div{
-    grid-area: lineup;
+                    >div{
+                        grid-area: lineup-content;
+                    }
+                }
+
+        }            
+    }
 }
+   

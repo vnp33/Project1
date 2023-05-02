@@ -430,12 +430,14 @@ footer #footer > div {
 /* =============
     Line Up
 ============= */
-#lineup {
+#lineup ul li img {
+  width: 100%;
+}
+#lineup ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". lineup .";
+  grid-template-areas: ". lineup-content .";
 }
-
-#lineup > div {
-  grid-area: lineup;
+#lineup ul li section > div {
+  grid-area: lineup-content;
 }
