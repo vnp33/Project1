@@ -13,6 +13,7 @@
                     grid-template-areas:". lineup-content .";
 
                     >div{
+                        background:rgba(169, 195, 233, 1);
                         grid-area: lineup-content;
                     }
                 }

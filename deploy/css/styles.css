@@ -439,5 +439,6 @@ footer #footer > div {
   grid-template-areas: ". lineup-content .";
 }
 #lineup ul li section > div {
+  background: rgb(169, 195, 233);
   grid-area: lineup-content;
 }
