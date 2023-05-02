@@ -415,14 +415,16 @@ footer #footer > div {
 /* =============
     Mini Heros
 ============= */
-#minihero {
+#miniheros .minihero-content {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". minihero .";
+  background: rgb(49, 89, 146);
 }
-
-#minihero > div {
+#miniheros .minihero-content > div {
   grid-area: minihero;
+  display: grid;
+  grid-template-columns: 50% auto;
 }
 
 /* =============
