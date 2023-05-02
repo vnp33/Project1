@@ -389,13 +389,13 @@ header #search div {
 /* =============
     Footer
 ============= */
-footer #footer {
+footer {
   background-color: rgb(41, 50, 65);
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
 }
-footer #footer > div {
+footer > div {
   grid-area: footer;
 }
 
