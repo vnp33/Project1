@@ -330,6 +330,8 @@ template {
 ul {
   padding: 0;
   margin: 0;
+}
+ul li {
   list-style: none;
 }
 
@@ -381,7 +383,7 @@ header #search {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
 }
-header #search > div {
+header #search div {
   grid-area: search;
 }
 /* =============
@@ -400,18 +402,16 @@ footer #footer > div {
 /* =============
     Hero
 ============= */
-#hero {
+#hero aside {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
-  border: 1px solid red;
 }
-
-#hero > div {
+#hero aside > div {
   grid-area: hero;
+  background-color: rgb(226, 109, 115);
 }
 
-/* ---------- Hero 2 ---------- */
 /* =============
     Mini Heros
 ============= */

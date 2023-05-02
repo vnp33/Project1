@@ -20,7 +20,7 @@ header{
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". search .";
        
-        >div{
+        div{
             grid-area: search;
             form{
                 input{

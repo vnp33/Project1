@@ -2,19 +2,14 @@
     Hero
 ============= */
 #hero{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas:
-     ". hero .";
+    aside{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". hero .";
 
-     border: 1px solid red;
-}
-
-#hero > div{
-    grid-area: hero;
-}
-
-/* ---------- Hero 2 ---------- */
-#hero2{
-
+            >div{
+                grid-area: hero;
+                background-color: rgba(226, 109, 115, 1);
+        }
+    }
 }
