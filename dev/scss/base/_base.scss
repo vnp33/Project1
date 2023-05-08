@@ -14,9 +14,9 @@ ul{
     width: 100%;
 }
 
-.show-large {
+.show-xxlarge {
     display: none;
-    @include lg{
+    @include xxl{
         display: block;
     }
 }

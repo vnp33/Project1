@@ -339,11 +339,11 @@ ul li {
   width: 100%;
 }
 
-.show-large {
+.show-xxlarge {
   display: none;
 }
-@media (min-width: 1024px) {
-  .show-large {
+@media (min-width: 1440px) {
+  .show-xxlarge {
     display: block;
   }
 }
@@ -469,6 +469,56 @@ footer > div {
 }
 #miniheros > div .minihero-content #minihero-right {
   background-color: rgb(49, 89, 146);
+}
+
+/* =============
+    Gallery
+============= */
+@media (min-width: 1024px) {
+  #gallery {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". gallery .";
+  }
+}
+@media (min-width: 1440px) {
+  #gallery {
+    grid-template-columns: auto 1400px auto;
+  }
+}
+#gallery ul {
+  display: grid;
+}
+@media (min-width: 768px) {
+  #gallery ul {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery ul {
+    grid-area: gallery;
+  }
+}
+@media (min-width: 1440px) {
+  #gallery ul {
+    grid-template-areas: "g1 g2" "g1 g3";
+  }
+}
+@media (min-width: 1440px) {
+  #gallery ul #g1 {
+    grid-area: g1;
+    background-color: black;
+  }
+}
+@media (min-width: 1440px) {
+  #gallery ul #g1 #g2 {
+    grid-area: g2;
+  }
+}
+@media (min-width: 1440px) {
+  #gallery ul #g1 #g2 #g3 {
+    grid-area: g3;
+  }
 }
 
 /* =============
