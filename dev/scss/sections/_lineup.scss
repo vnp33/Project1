@@ -54,31 +54,31 @@
             }  
 
             #l1{
-                @include lg{
+                @include md{
                     grid-area: l1;
                 }
             }
 
             #l2{
-                @include lg{
+                @include md{
                     grid-area: l2;
                 }
             }
 
             #l3{
-                @include lg{
+                @include md{
                     grid-area: l3;
                 }
             }
 
             #l4{
-                @include lg{
+                @include md{
                     grid-area: l4;
                 }
             }
 
             #l5{
-                @include lg{
+                @include md{
                     grid-area: l5;
                 }
             }

@@ -339,6 +339,15 @@ ul li {
   width: 100%;
 }
 
+.show-large {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-large {
+    display: block;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -432,19 +441,34 @@ footer > div {
     Mini Heros
 ============= */
 @media (min-width: 768px) {
-  #miniheros #minihero-content {
+  #miniheros {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". minihero .";
+  }
+}
+@media (min-width: 1440px) {
+  #miniheros {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+@media (min-width: 768px) {
+  #miniheros > div {
+    grid-area: minihero;
     display: grid;
     grid-template-columns: 50% auto;
   }
 }
-#miniheros #minihero-content aside {
+#miniheros > div .minihero-content > div {
+  grid-area: minihero-content;
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero .";
+  grid-template-columns: 50% auto;
+}
+#miniheros > div .minihero-content #minihero-left {
   background-color: rgb(49, 89, 146);
 }
-#miniheros #minihero-content aside > div {
-  grid-area: minihero-content;
+#miniheros > div .minihero-content #minihero-right {
+  background-color: rgb(49, 89, 146);
 }
 
 /* =============
@@ -490,27 +514,27 @@ footer > div {
   background: rgb(169, 195, 233);
   grid-area: lineup-content;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #lineup > div #l1 {
     grid-area: l1;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #lineup > div #l2 {
     grid-area: l2;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #lineup > div #l3 {
     grid-area: l3;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #lineup > div #l4 {
     grid-area: l4;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #lineup > div #l5 {
     grid-area: l5;
   }
