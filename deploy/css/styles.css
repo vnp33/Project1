@@ -402,23 +402,30 @@ footer > div {
 /* =============
     Hero
 ============= */
-#hero {
-  padding-bottom: 12px;
-}
 @media (min-width: 768px) {
-  #hero #hero-sub {
+  #hero section {
     display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #hero section {
     grid-template-columns: 50% auto;
   }
 }
-#hero #hero-sub aside {
+#hero section aside {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero .";
+  grid-template-areas: ". hero-aside .";
+}
+#hero section aside > div {
+  grid-area: hero-aside;
+}
+#hero section #hero-left {
   background-color: rgb(226, 109, 115);
 }
-#hero #hero-sub aside > div {
-  grid-area: hero;
+#hero section #hero-right {
+  background-color: rgb(255, 156, 161);
 }
 
 /* =============

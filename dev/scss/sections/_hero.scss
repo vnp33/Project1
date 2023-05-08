@@ -8,33 +8,23 @@
             grid-template-columns: 40% auto;
         }
         @include lg{
-            display: grid;
             grid-template-columns: 50% auto;
         }
         aside{
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-aside .";
-            >div{
-                grid-area: hero-aside;
-            }
+
+        >div{
+            grid-area: hero-aside;
+        }
         }
 
         #hero-left{
-        background-color: ;
-
+        background-color: rgba(226, 109, 115, 1);
         }
         #hero-right{
-            background-color: 
-
-    }
-
-   
-        
-
-    >div{
-        grid-area: hero;
+        background-color: rgba(255, 156, 161, 1)
         }
-    }
     }
 }
