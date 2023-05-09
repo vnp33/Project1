@@ -392,6 +392,9 @@ header #logo-nav {
 header #logo-nav > div {
   grid-area: logo-nav;
 }
+header #logo-nav img {
+  padding: 20px 0px;
+}
 header #search {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -400,6 +403,24 @@ header #search {
 header #search div {
   grid-area: search;
 }
+header #search div ul {
+  display: flex;
+  align-items: center;
+  padding: 16px 0px;
+}
+@media (min-width: 1440px) {
+  header #search div ul {
+    margin: 0px 200px;
+  }
+}
+header #search div ul li button {
+  border: none;
+  background-color: transparent;
+}
+header #search div ul #searchbutton {
+  margin-left: auto;
+}
+
 /* =============
     Footer
 ============= */

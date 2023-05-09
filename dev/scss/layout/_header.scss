@@ -14,7 +14,11 @@ header{
 
             }
         }
+        img{
+            padding: 20px 0px  
+        }
     }
+    
     #search{
         display: grid;
         grid-template-columns: 16px auto 16px;
@@ -22,17 +26,37 @@ header{
        
         div{
             grid-area: search;
-            form{
-                input{
+            ul{
+                display: flex;
+                align-items: center;
+                padding: 16px 0px;
 
+                @include xxl{
+                    margin: 0px 200px;
                 }
+                li{
+                    form{
 
-            }
-            button{
-                img{
-                    
+                        input{
+        
+                        }
+        
+                    }
+                    button{
+                        border: none;
+                        background-color: transparent;
+                        img{
+                            
+                        }
+                    }
+                }
+                #searchbutton{
+                    margin-left: auto ;
                 }
             }
+           
+            
+            
         }
     }
 }
