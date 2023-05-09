@@ -3,14 +3,22 @@
 ============= */
 
 #gallery{
+    padding-top: 16px;
+
+    @include md{
+        padding-top: 40px;
+    }
+
     @include lg{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". gallery .";
+        padding-top: 54px;
     }
 
     @include xxl{
         grid-template-columns: auto 1440px auto;
+        padding-top: 64px;
     }
     ul{
         display: grid;

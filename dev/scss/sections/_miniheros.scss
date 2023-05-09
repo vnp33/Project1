@@ -23,10 +23,6 @@
             display: grid;
             grid-template-columns: 50% auto;
         }
-
-        section{
-            padding: 18px 16px 15px;
-        }
         
         .minihero-content{
 
@@ -36,6 +32,10 @@
                 grid-template-columns: 50% auto;
 
                 display: flex;
+
+                section{
+                    padding: 18px 16px 15px;
+                }
 
                 a{
                     padding: 22px 0px 24px

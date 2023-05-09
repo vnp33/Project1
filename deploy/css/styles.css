@@ -542,14 +542,14 @@ footer > div {
     grid-template-columns: 50% auto;
   }
 }
-#miniheros > div section {
-  padding: 18px 16px 15px;
-}
 #miniheros > div .minihero-content > div {
   grid-area: minihero-content;
   display: grid;
   grid-template-columns: 50% auto;
   display: flex;
+}
+#miniheros > div .minihero-content > div section {
+  padding: 18px 16px 15px;
 }
 #miniheros > div .minihero-content > div a {
   padding: 22px 0px 24px;
@@ -568,16 +568,26 @@ footer > div {
 /* =============
     Gallery
 ============= */
+#gallery {
+  padding-top: 16px;
+}
+@media (min-width: 768px) {
+  #gallery {
+    padding-top: 40px;
+  }
+}
 @media (min-width: 1024px) {
   #gallery {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". gallery .";
+    padding-top: 54px;
   }
 }
 @media (min-width: 1440px) {
   #gallery {
     grid-template-columns: auto 1440px auto;
+    padding-top: 64px;
   }
 }
 #gallery ul {
