@@ -20,18 +20,24 @@
         @include md {
             grid-area: minihero;
             
+            gap: 10px;
             display: grid;
             grid-template-columns: 50% auto;
         }
         
         .minihero-content{
+            padding-bottom: 16px;
 
             >div{
                 grid-area: minihero-content;
                 display: grid;
                 grid-template-columns: 50% auto;
 
+                
+
                 display: flex;
+                align-items: center;
+            
 
                 section{
                     padding: 18px 16px 15px;
@@ -42,8 +48,8 @@
                 }
 
                 aside{
-                    margin-left: center;
-                    align-items: center;
+                    
+                   
                 
                 }
             }

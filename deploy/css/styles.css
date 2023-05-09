@@ -431,25 +431,23 @@ footer {
   background-color: rgb(41, 50, 65);
   color: rgb(253, 217, 219);
 }
-@media (min-width: 1440px) {
-  footer {
-    grid-template-columns: auto 1200px auto;
-  }
-}
 footer > div {
   grid-area: footer;
+  padding: 20px 0px;
 }
 @media (min-width: 768px) {
   footer > div {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "f1 f2" "f1 f3";
+    padding: 30px 0px 40px;
   }
 }
 @media (min-width: 1024px) {
   footer > div {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "f1 f2 f3";
+    padding: 48px 0px;
   }
 }
 @media (min-width: 768px) {
@@ -466,6 +464,13 @@ footer > div {
   footer > div #f3 {
     grid-area: f3;
   }
+}
+footer > div #f3 ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer > div #f3 ul li {
+  flex-direction: column;
 }
 
 /* =============
@@ -538,25 +543,26 @@ footer > div {
 @media (min-width: 768px) {
   #miniheros > div {
     grid-area: minihero;
+    gap: 10px;
     display: grid;
     grid-template-columns: 50% auto;
   }
+}
+#miniheros > div .minihero-content {
+  padding-bottom: 16px;
 }
 #miniheros > div .minihero-content > div {
   grid-area: minihero-content;
   display: grid;
   grid-template-columns: 50% auto;
   display: flex;
+  align-items: center;
 }
 #miniheros > div .minihero-content > div section {
   padding: 18px 16px 15px;
 }
 #miniheros > div .minihero-content > div a {
   padding: 22px 0px 24px;
-}
-#miniheros > div .minihero-content > div aside {
-  margin-left: center;
-  align-items: center;
 }
 #miniheros > div .minihero-content #minihero-left {
   background-color: rgb(49, 89, 146);
@@ -569,11 +575,11 @@ footer > div {
     Gallery
 ============= */
 #gallery {
-  padding-top: 16px;
+  padding: 16px;
 }
 @media (min-width: 768px) {
   #gallery {
-    padding-top: 40px;
+    padding: 40px 0px;
   }
 }
 @media (min-width: 1024px) {
@@ -581,13 +587,13 @@ footer > div {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". gallery .";
-    padding-top: 54px;
+    padding: 54px 0px;
   }
 }
 @media (min-width: 1440px) {
   #gallery {
     grid-template-columns: auto 1440px auto;
-    padding-top: 64px;
+    padding-top: 64px 0px;
   }
 }
 #gallery ul {
@@ -632,11 +638,22 @@ footer > div {
   margin-left: 16px;
   padding-bottom: 10px;
 }
+@media (min-width: 768px) {
+  #lineup {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  #lineup {
+    padding-bottom: 54px;
+  }
+}
 @media (min-width: 1440px) {
   #lineup {
     display: grid;
     grid-template-columns: auto 1440px auto;
     grid-template-areas: ". line-up .";
+    padding-bottom: 64px;
   }
 }
 @media (min-width: 1440px) {
@@ -647,6 +664,7 @@ footer > div {
 #lineup > div ul {
   display: grid;
   gap: 16px;
+  padding-bottom: 24px;
 }
 @media (min-width: 768px) {
   #lineup > div ul {

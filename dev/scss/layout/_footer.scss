@@ -8,13 +8,11 @@ footer{
 
     background-color:  rgba(41, 50, 65, 1);
     color: rgba(253, 217, 219, 1);
-       
-    @include xxl{
-        grid-template-columns: auto 1200px auto;
-    }
 
     >div{
         grid-area: footer;
+
+        padding: 20px 0px;
         
         @include md{
             display: grid;
@@ -22,12 +20,20 @@ footer{
             grid-template-areas: 
             "f1 f2"
             "f1 f3";
+
+            padding: 30px 0px 40px;
         }
 
         @include lg{
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: 
             "f1 f2 f3";
+
+            
+
+            padding: 48px 0px;
+
+        @include xxl{}
         }
 
         #f1{
@@ -45,6 +51,18 @@ footer{
         #f3{
             @include md{
                 grid-area: f3;
+
+            }
+
+            ul{
+                display: flex;
+                justify-content: space-between;
+                
+
+                li{ flex-direction: column;
+                    
+                }
+           
             }
         }
     }
