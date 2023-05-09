@@ -3,10 +3,13 @@
 ============= */
 
 #miniheros{
+    padding-top: 16px;
+
     @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". minihero .";
+        padding-top: 24px;
     }
     
     @include xxl{
@@ -20,6 +23,10 @@
             display: grid;
             grid-template-columns: 50% auto;
         }
+
+        section{
+            padding: 18px 16px 15px;
+        }
         
         .minihero-content{
 
@@ -27,6 +34,18 @@
                 grid-area: minihero-content;
                 display: grid;
                 grid-template-columns: 50% auto;
+
+                display: flex;
+
+                a{
+                    padding: 22px 0px 24px
+                }
+
+                aside{
+                    margin-left: center;
+                    align-items: center;
+                
+                }
             }
     
             #minihero-left{

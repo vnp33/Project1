@@ -519,11 +519,15 @@ footer > div {
 /* =============
     Mini Heros
 ============= */
+#miniheros {
+  padding-top: 16px;
+}
 @media (min-width: 768px) {
   #miniheros {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". minihero .";
+    padding-top: 24px;
   }
 }
 @media (min-width: 1440px) {
@@ -538,10 +542,21 @@ footer > div {
     grid-template-columns: 50% auto;
   }
 }
+#miniheros > div section {
+  padding: 18px 16px 15px;
+}
 #miniheros > div .minihero-content > div {
   grid-area: minihero-content;
   display: grid;
   grid-template-columns: 50% auto;
+  display: flex;
+}
+#miniheros > div .minihero-content > div a {
+  padding: 22px 0px 24px;
+}
+#miniheros > div .minihero-content > div aside {
+  margin-left: center;
+  align-items: center;
 }
 #miniheros > div .minihero-content #minihero-left {
   background-color: rgb(49, 89, 146);
