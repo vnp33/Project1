@@ -14,7 +14,6 @@
             grid-area: line-up;
         }
 
-
         ul{
             display: grid;
             gap: 16px;
@@ -51,7 +50,7 @@
     
                         }
                     }
-            }  
+        }  
 
             #l1{
                 @include md{

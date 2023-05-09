@@ -399,13 +399,47 @@ header #search div {
     Footer
 ============= */
 footer {
-  background-color: rgb(41, 50, 65);
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
+  background-color: rgb(41, 50, 65);
+  color: rgb(253, 217, 219);
+}
+@media (min-width: 1440px) {
+  footer {
+    grid-template-columns: auto 1200px auto;
+  }
 }
 footer > div {
   grid-area: footer;
+}
+@media (min-width: 768px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "f1 f2" "f1 f3";
+  }
+}
+@media (min-width: 1024px) {
+  footer > div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "f1 f2 f3";
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f1 {
+    grid-area: f1;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f2 {
+    grid-area: f2;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f3 {
+    grid-area: f3;
+  }
 }
 
 /* =============
@@ -483,7 +517,7 @@ footer > div {
 }
 @media (min-width: 1440px) {
   #gallery {
-    grid-template-columns: auto 1400px auto;
+    grid-template-columns: auto 1440px auto;
   }
 }
 #gallery ul {
