@@ -486,9 +486,28 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-aside .";
+  padding: 14px 0px;
 }
 #hero section aside > div {
   grid-area: hero-aside;
+  display: flex;
+  flex-direction: column;
+}
+#hero section aside > div .hero-a1 {
+  padding: 10px 0 18px;
+}
+@media (min-width: 768px) {
+  #hero section aside > div .hero-a1 {
+    padding: 8px 0px 24px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero section aside > div .hero-a1 {
+    pad: 8px 0px 16px;
+  }
+}
+#hero section aside > div .hero-a3 {
+  margin-left: auto;
 }
 #hero section #hero-left {
   background-color: rgb(226, 109, 115);

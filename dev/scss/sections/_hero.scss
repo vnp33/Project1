@@ -14,9 +14,37 @@
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-aside .";
+            padding: 14px 0px;
 
         >div{
             grid-area: hero-aside;
+
+            display: flex;
+            flex-direction: column;
+
+            h{
+
+            }
+
+            .hero-a1{
+                padding: 10px 0 18px;
+
+                @include md{
+                    padding: 8px 0px 24px;
+                }
+
+                @include lg{
+                    pad: 8px 0px 16px;
+                }
+            }
+
+            .hero-a2{
+
+            }
+            
+            .hero-a3{
+                margin-left: auto;
+            }
         }
         }
 
