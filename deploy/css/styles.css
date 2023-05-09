@@ -351,6 +351,11 @@ ul li {
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -558,6 +563,10 @@ footer > div {
 /* =============
     Line Up
 ============= */
+#lineup h1 {
+  margin-left: 16px;
+  padding-bottom: 10px;
+}
 @media (min-width: 1440px) {
   #lineup {
     display: grid;
@@ -591,31 +600,69 @@ footer > div {
 }
 #lineup > div ul li section {
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: auto;
   grid-template-areas: ". lineup-content .";
 }
 #lineup > div ul li section > div {
   background: rgb(169, 195, 233);
   grid-area: lineup-content;
+  padding: 10px 16px 19px 15px;
+}
+@media (min-width: 768px) {
+  #lineup > div ul li section > div {
+    padding: 19px 18px 27px 17px;
+  }
+}
+@media (min-width: 1024px) {
+  #lineup > div ul li section > div {
+    padding: 18px 16px 24px 15px;
+  }
+}
+#lineup > div ul li section > div p {
+  padding: 20px 0 16px;
+}
+@media (min-width: 768px) {
+  #lineup > div ul li section > div p {
+    padding: 24px 0;
+  }
 }
 @media (min-width: 768px) {
   #lineup > div #l1 {
     grid-area: l1;
+    margin-left: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #lineup > div #l1 {
+    margin-left: 16px;
   }
 }
 @media (min-width: 768px) {
   #lineup > div #l2 {
     grid-area: l2;
+    margin-right: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #lineup > div #l2 {
+    margin-right: 16px;
   }
 }
 @media (min-width: 768px) {
   #lineup > div #l3 {
     grid-area: l3;
+    margin-left: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #lineup > div #l3 {
+    margin-left: 16px;
   }
 }
 @media (min-width: 768px) {
   #lineup > div #l4 {
     grid-area: l4;
+    margin-right: 16px;
   }
 }
 @media (min-width: 768px) {

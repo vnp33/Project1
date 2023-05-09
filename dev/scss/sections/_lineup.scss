@@ -3,6 +3,11 @@
 ============= */
 #lineup{
 
+    h1{
+        margin-left: 16px;
+        padding-bottom: 10px;
+    }
+
     @include xxl{
         display: grid;
         grid-template-columns: auto 1440px auto;
@@ -40,40 +45,76 @@
                 }
                     section{ 
                         display: grid;
-                        grid-template-columns: 16px auto 16px;
+                        grid-template-columns: auto;
                         grid-template-areas:". lineup-content .";
+                        
     
                         >div{
                             background:rgba(169, 195, 233, 1);
                             grid-area: lineup-content;
+                            padding: 10px 16px 19px 15px;
+
+                            @include md{
+                                padding: 19px 18px 27px 17px;
                             }
+
+                            @include lg{
+                                padding: 18px 16px 24px 15px;
+                            }
+
+                                p{
+                                   padding: 20px 0 16px; 
+
+                                   @include md{
+                                        padding: 24px 0;
+                                   }
+                                   
+                                }
+                            }
+
     
                         }
                     }
         }  
 
             #l1{
+            
                 @include md{
                     grid-area: l1;
+                    margin-left: 16px ;
+                }
+                @include lg{
+                    margin-left: 16px ;
                 }
             }
 
             #l2{
                 @include md{
                     grid-area: l2;
+                    margin-right: 16px;
+                }
+                @include lg{
+                    margin-right: 16px ;
                 }
             }
 
             #l3{
                 @include md{
                     grid-area: l3;
+                    margin-left: 16px ;
+                }
+                @include lg{
+                    margin-left: 16px ;
                 }
             }
 
             #l4{
                 @include md{
                     grid-area: l4;
+                    margin-right: 16px;
                 }
+
+
             }
 
             #l5{
