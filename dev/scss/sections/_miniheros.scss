@@ -17,9 +17,7 @@
     }
 
     >div{
-        
         color: white;
-
         a:link, a:visited{
             color: white;
             text-decoration: none;
@@ -27,15 +25,11 @@
             background-color: var(--red);
             display:inline-block;
         }
-
-        &:hover, &:active{
-
-        }
-
+       
         @include md {
             grid-area: minihero;
             
-          
+           
             gap: 10px;
             display: grid;
             grid-template-columns: 50% auto;

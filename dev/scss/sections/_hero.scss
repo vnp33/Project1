@@ -3,6 +3,11 @@
 ============= */
 #hero{
     section{
+        color: white;
+        a:link, a:visited{
+            color: white;
+        }
+
         @include md{
             display: grid;
             grid-template-columns: 40% auto;

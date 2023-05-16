@@ -493,7 +493,11 @@ footer > div #f3 ul li {
     Hero
 ============= */
 #hero section {
+  color: white;
   background-color: var(--darkpink);
+}
+#hero section a:link, #hero section a:visited {
+  color: white;
 }
 @media (min-width: 768px) {
   #hero section {
