@@ -372,14 +372,17 @@ h1, h2, h3, h4, h5, p {
   padding: 0;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 /* =============
     Buttons
 ============= */
-.red-button a:link, .red-button a:visited {
-  color: white;
-  text-decoration: none;
-  padding: 4px 10px;
+.red-button {
   background-color: var(--red);
+  color: white;
+  padding: 8px 16px;
   display: inline-block;
 }
 
@@ -435,7 +438,7 @@ header #search div {
 }
 header #search div ul li form {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 header #search div ul li form input {
   border: 1px solid red;
@@ -529,7 +532,6 @@ footer > div #f1 #f3 ul li {
 ============= */
 #hero section {
   color: white;
-  background-color: var(--darkpink);
 }
 #hero section a:link, #hero section a:visited {
   color: white;
@@ -571,6 +573,9 @@ footer > div #f1 #f3 ul li {
 }
 #hero section aside > div .hero-a3 {
   margin-left: auto;
+}
+#hero section #hero-left {
+  background-color: var(--darkpink);
 }
 #hero section #hero-right {
   background-color: var(--pink);
@@ -676,19 +681,22 @@ footer > div #f1 #f3 ul li {
     grid-template-areas: "g1 g2" "g1 g3";
   }
 }
+#gallery ul #g1 {
+  background-image: url("..img/heros/ricecooker3.jpeg");
+  height: 270px;
+}
 @media (min-width: 1440px) {
   #gallery ul #g1 {
     grid-area: g1;
-    background-color: black;
   }
 }
 @media (min-width: 1440px) {
-  #gallery ul #g1 #g2 {
+  #gallery ul #g2 {
     grid-area: g2;
   }
 }
 @media (min-width: 1440px) {
-  #gallery ul #g1 #g2 #g3 {
+  #gallery ul #g2 #g3 {
     grid-area: g3;
   }
 }

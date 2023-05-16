@@ -1,103 +1,104 @@
 /* =============
     Footer
 ============= */
-footer{
+footer {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
 
     background-color: var(--darkblue);
     color: white;
-     padding: 24px 0;
+    padding: 24px 0;
 
-    @include xxl{
+    @include xxl {
         grid-template-columns: auto 1200px auto;
     }
 
-    >div{
+    >div {
         grid-area: footer;
 
         padding: 20px 0px;
-        
-        @include md{
+
+        @include md {
             display: grid;
             grid-template-columns: 50% auto;
-            grid-template-areas: 
-            "f1 f2"
-            "f1 f3";
+            grid-template-areas:
+                "f1 f2"
+                "f1 f3";
 
             padding: 30px 0px 40px;
         }
 
-        @include lg{
+        @include lg {
             grid-template-columns: repeat(3, 1fr);
-            grid-template-areas: 
-            "f1 f2 f3";
+            grid-template-areas:
+                "f1 f2 f3";
 
-            
+
 
             padding: 48px 0px;
         }
 
 
-        
 
-        #f1{
-            section{
+
+        #f1 {
+            section {
                 display: flex;
-                i{
+
+                i {
                     color: white;
                     font-size: rem-cal(20);
                 }
             }
-            @include md{
+
+            @include md {
                 grid-area: f1;
-        }
-
-        #f2{
-        
-           
-            @include md{
-                grid-area: f2;
-                
             }
 
-            form{
-                input{
-                    background-color: var(--lightpink);
-                    width: 100%;
-                    box-sizing: border-box;
+            #f2 {
 
-                
-                }
-                button{
-                    border: none;
+
+                @include md {
+                    grid-area: f2;
 
                 }
-            }
-        }
 
-        #f3{
-            @include md{
-                grid-area: f3;
+                form {
+                    input {
+                        background-color: var(--lightpink);
+                        width: 100%;
+                        box-sizing: border-box;
 
-            }
 
-            ul{
-                display: flex;
-                justify-content: space-between;
-                
+                    }
 
-                li{ 
-                    margin-right: 16px;
-                    flex-direction: column;
-                    
+                    button {
+                        border: none;
+
+                    }
                 }
             }
-           
+
+            #f3 {
+                @include md {
+                    grid-area: f3;
+
+                }
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+
+
+                    li {
+                        margin-right: 16px;
+                        flex-direction: column;
+
+                    }
+                }
+
             }
         }
     }
 }
-
-

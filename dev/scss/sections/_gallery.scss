@@ -36,12 +36,17 @@
             "g1 g2"
             "g1 g3";
         }
-    
+          
         #g1{
-            @include xxl{
-                grid-area: g1 ;
-                background-color: black;
+           background-image: url("..img/heros/ricecooker3.jpeg");
+           height: 270px;
+        
+        @include xxl{
+            grid-area: g1 ;
+        
             }
+        }
+        
         #g2{
             @include xxl{
                 grid-area: g2 ;
@@ -54,4 +59,3 @@
         }
         }
     } 
-}

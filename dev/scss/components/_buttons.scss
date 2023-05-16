@@ -1,12 +1,9 @@
 /* =============
     Buttons
 ============= */
-.red-button{
- a:link, a:visited{
-        color: white;
-        text-decoration: none;
-        padding: 4px 10px;
+    .red-button{
         background-color: var(--red);
-        display:inline-block;
+        color: white;
+        padding: 8px 16px;
+        display: inline-block;
     }
-}
