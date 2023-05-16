@@ -49,10 +49,10 @@
         }
 
         #hero-left{
-        background-color: rgba(226, 109, 115, 1);
         }
+        background-color: var(--darkpink);
         #hero-right{
-        background-color: rgba(255, 156, 161, 1)
+        background-color: var(--pink)
         }
     }
 }

@@ -11,15 +11,31 @@
         grid-template-areas: ". minihero .";
         padding-top: 24px;
     }
-    
+
     @include xxl{
-        grid-template-columns: auto 1200px auto;
+        grid-template-columns: auto 1000px auto;
     }
 
     >div{
+        
+        color: white;
+
+        a:link, a:visited{
+            color: white;
+            text-decoration: none;
+            padding: 4px 10px;
+            background-color: var(--red);
+            display:inline-block;
+        }
+
+        &:hover, &:active{
+
+        }
+
         @include md {
             grid-area: minihero;
             
+          
             gap: 10px;
             display: grid;
             grid-template-columns: 50% auto;
@@ -39,30 +55,29 @@
                 align-items: center;
             
 
-                section{
-                    padding: 18px 16px 15px;
-                }
-
+           
                 a{
                     padding: 22px 0px 24px
                 }
 
                 aside{
                     
-                   
-                
+
                 }
             }
     
             #minihero-left{
-                background-color:  rgba(49, 89, 146, 1)
+                background-color: var(--blue)
+                    
+                
             }
             #minihero-right{
-                background-color:  rgba(49, 89, 146, 1)
+                background-color:  var(--blue);
             }
         }  
     }
 }
+
         
     
     

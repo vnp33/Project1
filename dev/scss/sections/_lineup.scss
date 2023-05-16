@@ -59,9 +59,16 @@
                         
     
                         >div{
-                            background:rgba(169, 195, 233, 1);
+                            background:var(--lightblue);
                             grid-area: lineup-content;
                             padding: 10px 16px 19px 15px;
+
+                            a:link, a:visited{
+                                color: white;
+                                text-decoration: none;
+                                padding: 4px 10px;
+                                background-color: var(--red);
+                                display:inline-block;
 
                             @include md{
                                 padding: 19px 18px 27px 17px;
@@ -131,7 +138,7 @@
                     grid-area: l5;
                 }
             }
-
+        }
 
     }
    
