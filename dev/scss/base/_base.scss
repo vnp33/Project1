@@ -13,6 +13,13 @@ ul{
     width: 100%;
 }
 
+.show-xxltext{
+    display: none;
+    @include xxl{
+        display: block;
+    }
+}
+
 .show-xxlarge {
     display: none;
     @include xxl{

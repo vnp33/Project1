@@ -13,6 +13,7 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --lightpink: #FFF3F4;
   --pink: #FF9CA1;
   --darkpink: #E26D73;
   --darkblue: #293241;
@@ -345,6 +346,15 @@ ul li {
   width: 100%;
 }
 
+.show-xxltext {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .show-xxltext {
+    display: block;
+  }
+}
+
 .show-xxlarge {
   display: none;
 }
@@ -365,6 +375,14 @@ h1, h2, h3, h4, h5, p {
 /* =============
     Buttons
 ============= */
+.red-button a:link, .red-button a:visited {
+  color: white;
+  text-decoration: none;
+  padding: 4px 10px;
+  background-color: var(--red);
+  display: inline-block;
+}
+
 /* =============
     Forms
 ============= */
@@ -439,8 +457,9 @@ footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
-  background-color: rgb(41, 50, 65);
-  color: rgb(253, 217, 219);
+  background-color: var(--darkblue);
+  color: white;
+  padding: 24px 0;
 }
 @media (min-width: 1440px) {
   footer {
@@ -466,26 +485,42 @@ footer > div {
     padding: 48px 0px;
   }
 }
+footer > div #f1 section {
+  display: flex;
+}
+footer > div #f1 section i {
+  color: white;
+  font-size: rem-cal(20);
+}
 @media (min-width: 768px) {
   footer > div #f1 {
     grid-area: f1;
   }
 }
 @media (min-width: 768px) {
-  footer > div #f2 {
+  footer > div #f1 #f2 {
     grid-area: f2;
   }
 }
+footer > div #f1 #f2 form input {
+  background-color: var(--lightpink);
+  width: 100%;
+  box-sizing: border-box;
+}
+footer > div #f1 #f2 form button {
+  border: none;
+}
 @media (min-width: 768px) {
-  footer > div #f3 {
+  footer > div #f1 #f3 {
     grid-area: f3;
   }
 }
-footer > div #f3 ul {
+footer > div #f1 #f3 ul {
   display: flex;
   justify-content: space-between;
 }
-footer > div #f3 ul li {
+footer > div #f1 #f3 ul li {
+  margin-right: 16px;
   flex-direction: column;
 }
 
