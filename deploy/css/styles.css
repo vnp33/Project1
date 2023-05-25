@@ -381,6 +381,7 @@ body {
 ============= */
 .red-button {
   background-color: var(--red);
+  text-decoration: none;
   color: white;
   padding: 8px 16px;
   display: inline-block;
@@ -419,7 +420,7 @@ header #logo-nav {
 header #logo-nav > div {
   grid-area: logo-nav;
 }
-header #logo-nav img {
+header #logo-nav > div img {
   padding: 20px 0px;
 }
 header #search {
@@ -433,23 +434,46 @@ header #search {
     padding: 24px 0px;
   }
 }
+@media (min-width: 768px) and (min-width: 1440px) {
+  header #search {
+    grid-template-columns: auto 1200 auto;
+    padding: 30px 0px;
+  }
+}
 header #search div {
   grid-area: search;
 }
-header #search div ul li form {
+header #search div form {
   display: flex;
-  justify-content: center;
 }
-header #search div ul li form input {
-  border: 1px solid red;
+header #search div form input {
   width: 100%;
-}
-header #search div ul li button {
   border: none;
+  border-bottom: 1px soild var(--pink);
+  border-radius: 0;
+  background-color: transparent;
+  margin: 8px;
+}
+@media (min-width: 768px) {
+  header #search div form input {
+    font-size: 1.875rem;
+    font-weight: 300;
+  }
+}
+@media (min-width: 1200px) {
+  header #search div form {
+    font-size: 2.1875rem;
+  }
+}
+header #search div button {
+  background-color: var--red;
+  border: 0px;
   background-color: transparent;
   border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1.875rem;
 }
-header #search div ul #searchbutton {
+header #search #searchbutton {
   margin-left: auto;
 }
 
@@ -592,23 +616,12 @@ footer > div #f1 #f3 ul li {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". minihero .";
-    padding-top: 24px;
   }
 }
 @media (min-width: 1440px) {
   #miniheros {
     grid-template-columns: auto 1000px auto;
   }
-}
-#miniheros > div {
-  color: white;
-}
-#miniheros > div a:link, #miniheros > div a:visited {
-  color: white;
-  text-decoration: none;
-  padding: 4px 10px;
-  background-color: var(--red);
-  display: inline-block;
 }
 @media (min-width: 768px) {
   #miniheros > div {
@@ -618,23 +631,18 @@ footer > div #f1 #f3 ul li {
     grid-template-columns: 50% auto;
   }
 }
-#miniheros > div .minihero-content {
-  padding-bottom: 16px;
+#miniheros .minihero-content {
+  color: white;
 }
-#miniheros > div .minihero-content > div {
+#miniheros .minihero-content > div {
   grid-area: minihero-content;
   display: grid;
   grid-template-columns: 50% auto;
-  display: flex;
-  align-items: center;
 }
-#miniheros > div .minihero-content > div a {
-  padding: 22px 0px 24px;
-}
-#miniheros > div .minihero-content #minihero-left {
+#miniheros .minihero-content #minihero-left {
   background-color: var(--blue);
 }
-#miniheros > div .minihero-content #minihero-right {
+#miniheros .minihero-content #minihero-right {
   background-color: var(--blue);
 }
 

@@ -11,12 +11,11 @@ header {
         >div {
             grid-area: logo-nav;
 
-            img {}
+            img {
+                padding: 20px 0px
+            }
         }
-
-        img {
-            padding: 20px 0px
-        }
+       
     }
 
     #search {
@@ -27,36 +26,51 @@ header {
 
         @include md {
             padding: 24px 0px;
+
+        @include xxl {
+            grid-template-columns: auto 1200 auto ;
+            padding: 30px 0px;
+            }
         }
 
         div {
             grid-area: search;
-
-            ul {
-
-
-                li {
                     form {
                         display: flex;
-                        justify-content: center;
 
 
                         input {
-                            border: 1px solid red;
                             width: 100%;
+                            border: none;
+                            border-bottom: 1px soild var(--pink);
+                            border-radius: 0;
+                            background-color: transparent;
+                            margin: 8px;
+
+                        @include md{
+                            font-size: rem-calc(30);
+                            font-weight: 300;
+                        }
+                        }
+
+                        @include xl{
+                            font-size: rem-calc(35);
                         }
 
                     }
 
                     button {
-                        border: none;
+                        background-color: (var--red);
+                        border: 0px ;
                         background-color: transparent;
                         border-radius: 5px;
+                        padding: 10px 15px;
+                        font-size: rem-calc(30);
 
                         img {}
                     }
                 }
-
+                
                 #searchbutton {
                     margin-left: auto;
                 }
@@ -65,7 +79,6 @@ header {
 
 
         }
-    }
-}
+
 
 

@@ -2,77 +2,44 @@
     Mini Heros
 ============= */
 
-#miniheros{
+#miniheros {
     padding-top: 16px;
 
-    @include md{
+    @include md {
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". minihero .";
-        padding-top: 24px;
     }
 
-    @include xxl{
+    @include xxl {
         grid-template-columns: auto 1000px auto;
     }
 
-    >div{
-        color: white;
-        a:link, a:visited{
-            color: white;
-            text-decoration: none;
-            padding: 4px 10px;
-            background-color: var(--red);
-            display:inline-block;
-        }
-       
+    >div {
         @include md {
             grid-area: minihero;
-            
-           
             gap: 10px;
             display: grid;
             grid-template-columns: 50% auto;
         }
+    }
+
+    .minihero-content {
+
+        color: white;
+
+        >div {
+            grid-area: minihero-content;
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
         
-        .minihero-content{
-            padding-bottom: 16px;
+        #minihero-left {
+            background-color: var(--blue)
+        }
 
-            >div{
-                grid-area: minihero-content;
-                display: grid;
-                grid-template-columns: 50% auto;
-
-                
-
-                display: flex;
-                align-items: center;
-            
-
-           
-                a{
-                    padding: 22px 0px 24px
-                }
-
-                aside{
-                    
-
-                }
-            }
-    
-            #minihero-left{
-                background-color: var(--blue)
-                    
-                
-            }
-            #minihero-right{
-                background-color:  var(--blue);
-            }
-        }  
+        #minihero-right {
+            background-color: var(--blue);
+        }
     }
 }
-
-        
-    
-    
-  
